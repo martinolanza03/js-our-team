@@ -54,15 +54,14 @@ console.log(gridElement);
 // Funzione per aggiungere le informazioni
 
 /*  
-<div class="card">
+              <div class="card">
                 <img src="" alt="" class="image">
                 <div class="information">
                     <p class="name"></p>
                     <p class="role"></p>
                     <p class="email"></p>
                 </div>
-            </div>
-        </div>
+              </div>
 */
 
 function addInformation() {
@@ -76,8 +75,7 @@ function addInformation() {
                     <p class="role">${newItems.role}</p>
                     <p class="email">${newItems.email}</p>
                 </div>
-            </div>
-        </div>`
+            </div>`
   }
   console.log(items);
 
