@@ -84,3 +84,35 @@ function addInformation() {
 
 gridElement.innerHTML = addInformation();
 
+
+// Elementi input
+
+const inputNameElement = document.getElementById('addName');
+const inputRoleElement = document.getElementById('addRole');
+const inputEmailElement = document.getElementById('addEmail');
+const inputImageElement = document.getElementById('addImage');
+const inputFormElement = document.getElementById('form');
+
+console.log(inputNameElement);
+console.log(inputRoleElement);
+console.log(inputEmailElement);
+console.log(inputImageElement);
+console.log(inputFormElement);
+
+
+inputFormElement.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  const newMember = {
+    name: inputNameElement.value,
+    role: inputRoleElement.value,
+    email: inputEmailElement.value,
+    img: inputImageElement.value
+  };
+
+  console.log(newMember);
+  teamMembers.push(newMember);
+  console.log(teamMembers);
+  gridElement.innerHTML = addInformation();
+});
+
