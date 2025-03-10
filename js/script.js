@@ -39,12 +39,49 @@ const teamMembers = [
 
 // Elementi
 
-const nameElement = document.getElementsByClassName('name');
-const roleElement = document.getElementsByClassName('role');
-const emailElement = document.getElementsByClassName('email');
-const imageElement = document.getElementsByClassName('image');
+const nameElement = document.querySelector('name');
+const roleElement = document.querySelector('role');
+const emailElement = document.querySelector('email');
+const imageElement = document.querySelector('image');
+const gridElement = document.querySelector('div.grid');
 
 console.log(nameElement);
 console.log(roleElement);
 console.log(emailElement);
 console.log(imageElement);
+console.log(gridElement);
+
+// Funzione per aggiungere le informazioni
+
+/*  
+<div class="card">
+                <img src="" alt="" class="image">
+                <div class="information">
+                    <p class="name"></p>
+                    <p class="role"></p>
+                    <p class="email"></p>
+                </div>
+            </div>
+        </div>
+*/
+
+function addInformation() {
+  let items = '';
+  for (let i = 0; i < teamMembers.length; i++) {
+    items += `<div class="card">
+                <img src="${teamMembers[i].img}" alt="${teamMembers[i].name}" class="image">
+                <div class="information">
+                    <p class="name">${teamMembers[i].name}</p>
+                    <p class="role">${teamMembers[i].role}</p>
+                    <p class="email">${teamMembers[i].email}</p>
+                </div>
+            </div>
+        </div>`
+  }
+  console.log(items);
+
+  return items;
+}
+
+gridElement.innerHTML = addInformation();
+
