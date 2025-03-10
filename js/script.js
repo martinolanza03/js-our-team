@@ -36,3 +36,15 @@ const teamMembers = [
     img: "img/female3.png"
   }
 ];
+
+// Elementi
+
+const nameElement = document.getElementsByClassName('name');
+const roleElement = document.getElementsByClassName('role');
+const emailElement = document.getElementsByClassName('email');
+const imageElement = document.getElementsByClassName('image');
+
+console.log(nameElement);
+console.log(roleElement);
+console.log(emailElement);
+console.log(imageElement);
