@@ -22,4 +22,13 @@ h1 {
 .grid {
     display: flex;
     gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    background-color: #000000;
+    height: 125px;
+    width: calc((100% - 120px)/ 3);
+
 }
