@@ -68,12 +68,13 @@ console.log(gridElement);
 function addInformation() {
   let items = '';
   for (let i = 0; i < teamMembers.length; i++) {
+    const newItems = teamMembers[i];
     items += `<div class="card">
-                <img src="${teamMembers[i].img}" alt="${teamMembers[i].name}" class="image">
+                <img src="${newItems.img}" alt="${newItems.name}" class="image">
                 <div class="information">
-                    <p class="name">${teamMembers[i].name}</p>
-                    <p class="role">${teamMembers[i].role}</p>
-                    <p class="email">${teamMembers[i].email}</p>
+                    <p class="name">${newItems.name}</p>
+                    <p class="role">${newItems.role}</p>
+                    <p class="email">${newItems.email}</p>
                 </div>
             </div>
         </div>`
