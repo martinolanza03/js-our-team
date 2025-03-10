@@ -30,9 +30,10 @@ h1 {
     display: flex;
     gap: 40px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
-.card {
+.card-infromation {
     display: flex;
     background-color: #000000;
     height: 125px;
@@ -59,4 +60,8 @@ h1 {
 
 .email {
     color: #6ecbf2;
+}
+
+p {
+    margin: 0;
 }

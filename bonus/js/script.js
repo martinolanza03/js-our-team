@@ -68,7 +68,7 @@ function addInformation() {
   let items = '';
   for (let i = 0; i < teamMembers.length; i++) {
     const newItems = teamMembers[i];
-    items += `<div class="card">
+    items += `<div class="card-infromation ">
                 <img src="${newItems.img}" alt="${newItems.name}" class="image">
                 <div class="information">
                     <p class="name">${newItems.name}</p>
